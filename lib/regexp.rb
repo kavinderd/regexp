@@ -1,5 +1,7 @@
 require "regexp/version"
 
-module Regexp
-  # Your code goes here...
+class Regexp
+	def self.build(*args)
+	end
 end
+

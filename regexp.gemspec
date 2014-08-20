@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Regexp::VERSION
   spec.authors       = ["Kavinder Dhaliwal"]
   spec.email         = ["kavinderd@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Ruby Quiz #4}
+  spec.description   = %q{This isn't the code you're looking for}
   spec.homepage      = ""
   spec.license       = "MIT"
 
