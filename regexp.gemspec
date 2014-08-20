@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'regexp/version'
-
+VERSION = 0.0.0
 Gem::Specification.new do |spec|
   spec.name          = "regexp"
-  spec.version       = Regexp::VERSION
+  spec.version       = VERSION
   spec.authors       = ["Kavinder Dhaliwal"]
   spec.email         = ["kavinderd@gmail.com"]
   spec.summary       = %q{Ruby Quiz #4}

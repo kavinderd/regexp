@@ -1,24 +1,29 @@
 # Regexp
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'regexp'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install regexp
+This is my attempt at [Ruby Quiz #4](http://rubyquiz.com/quiz4.html). This library adds a `.build` method to `Regexp` that takes a variable numebr of arguments. See usage for more information.
 
 ## Usage
 
-TODO: Write usage instructions here
+With two `int` arguments
+
+	pattern = Regexp.build(3, 7)
+	"7"  =~ pattern # => 0
+	"13" =~ pattern # => nil
+	"3"  =~ pattern # => 0
+
+With a `range` argument
+	
+	pattern = Regexp.build(1..12)
+	"0" =~ pattern # => nil
+	"1" =~ pattern # => 0
+	"12"=~ pattern # => 0
+
+With both `int` and `range` arguments
+
+	pattern = Regexp.build(98, 99, 2000.2005)
+	"04"   =~ pattern # => nil
+	"2004" =~ pattern # => 0
+	"98"   =~ pattern # => 0	
 
 ## Contributing
 
